@@ -1,6 +1,5 @@
 import express from "express"
 
-
 import {productosController} from "./Dependencias";
 export const routes = express.Router();
 routes.post('/', productosController.create.bind(productosController));

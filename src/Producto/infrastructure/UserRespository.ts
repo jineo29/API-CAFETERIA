@@ -11,7 +11,7 @@ export class productoRepositori implements ProductoRepository {
   ): Promise<Producto> {
     const mysql = new database();
     return await new Promise((resolve, reject) => {
-      const sql = `UPDATE cafedb.usuarios SET Nombre='${Nombre}', Telefono='${Telefono}' WHERE Correo='${Correo}'`;
+      const sql = `UPDATE cafedbkepo.usuarios SET Nombre='${Nombre}', Telefono='${Telefono}' WHERE Correo='${Correo}'`;
       mysql.connection.query(sql, (error: QueryError, results: Producto) => {
         if (error) {
           reject(error);
@@ -25,7 +25,7 @@ export class productoRepositori implements ProductoRepository {
     const mysql = new database();
     return await new Promise((resolve, reject) => {
       mysql.connection.query(
-        `DELETE FROM cafedb.usuarios WHERE Correo = '${Correo}'`,
+        `DELETE FROM cafedbkepo.usuarios WHERE Correo = '${Correo}'`,
         (error: QueryError, rows: Producto) => {
           if (error) {
             reject(error);
@@ -40,7 +40,7 @@ export class productoRepositori implements ProductoRepository {
     const mysql = new database();
     return await new Promise((resolve, reject) => {
       mysql.connection.query(
-        `SELECT * FROM cafedb.usuarios WHERE Correo = '${Correo}';`,
+        `SELECT * FROM cafedbkepo.usuarios WHERE Correo = '${Correo}';`,
         (error: QueryError, rows: Producto) => {
           if (error) {
             reject(error);
@@ -55,7 +55,7 @@ export class productoRepositori implements ProductoRepository {
     const mysql = new database();
     return await new Promise((resolve, reject) => {
       mysql.connection.query(
-        "SELECT * FROM cafedb.usuarios",
+        "SELECT * FROM cafedbkepo.usuarios",
         (error: QueryError, rows: Producto[]) => {
           if (error) {
             reject(error);
@@ -74,7 +74,7 @@ export class productoRepositori implements ProductoRepository {
   ): Promise<Producto> {
     const mysql = new database();
     return await new Promise((resolve, reject) => {
-      const sql = `INSERT INTO cafedb.usuarios(Nombre,Telefono,Correo) VALUES ('${Nombre}','${Telefono}','${Correo}')`;
+      const sql = `INSERT INTO cafedbkepo.usuarios(Nombre,Telefono,Correo) VALUES ('${Nombre}','${Telefono}','${Correo}')`;
       mysql.connection.query(sql, (error: QueryError, results: Producto) => {
         if (error) {
           reject(error);
