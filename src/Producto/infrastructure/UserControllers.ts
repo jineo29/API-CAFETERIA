@@ -14,7 +14,6 @@ export class ProductosController {
     readonly putuser: PutUser
   ) {}
 
-  
   put = async (req: Request, res: Response) => {
     try {
       const { Nombre, Telefono, Correo } = req.body;
@@ -59,7 +58,7 @@ export class ProductosController {
     try {
       const { Nombre, Telefono, Correo } = req.body;
 
-      const onlyLetters = /^[A-Za-z]+$/.test(Nombre);
+      const onlyLetters = /^[A-Za-z ]+$/.test(Nombre);
       if (!onlyLetters) {
         return res
           .status(400)
