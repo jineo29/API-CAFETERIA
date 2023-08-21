@@ -9,14 +9,14 @@ import { rateLimit } from "express-rate-limit";
 const app = express();
 
 const accountLimiter = rateLimit({
-  windowMs: 20 * 60 * 1000, 
-  max: 3, 
+  windowMs: 10 * 60 * 1000,
+  max: 3,
   message: "Demasiados intentos, por favor espera un momento.",
 });
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/Usuarios", accountLimiter,routes);
+app.use("/Usuarios", accountLimiter, routes);
 
 const { port } = config.server;
 
