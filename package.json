@@ -16,24 +16,17 @@
     "build:tsc": "tsc -p tsconfig.prod.json"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlbertHernandez/hexagonal-architecture-typescript-service-skeleton.git"
+    "type": "git"
   },
   "keywords": [
     "typescript",
-    "hexagonal architecture",
-    "skeleton"
+    "hexagonal architecture"
   ],
-  "author": "alberthernandezdev@gmail.com",
-  "license": "MIT",
+  "author": "jesuruga@gmail.com",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.3.0"
   },
-  "bugs": {
-    "url": "https://github.com/AlbertHernandez/hexagonal-architecture-typescript-service-skeleton/issues"
-  },
-  "homepage": "https://github.com/AlbertHernandez/hexagonal-architecture-typescript-service-skeleton#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
