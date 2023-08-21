@@ -62,13 +62,13 @@ export class ProductosController {
       if (!onlyLetters) {
         return res
           .status(400)
-          .json({ error: "En Nombre no debe llevar Números" });
+          .json({ error: "Nombre no debe llevar Números" });
       }
       const onlyNumbers = /^[0-9]+$/.test(Telefono);
       if (!onlyNumbers) {
         return res
           .status(400)
-          .json({ error: "En Telefono solo deben ser números" });
+          .json({ error: "Telefono solo deben ser números" });
       }
       const onlyCorreo = /^\w+([.-_+]?\w+)*@(gmail\.com|hotmail\.com)$/.test(
         Correo
