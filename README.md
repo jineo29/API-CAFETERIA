@@ -1,19 +1,38 @@
-# backend_landing_page_cafeteria
+# API para Café Peko Frontend
 
-API CREADA PARA FUNCIONAR, JUNTO CON EL FROND DEL CAFE PEKO
+Esta API ha sido desarrollada para funcionar en conjunto con el front-end de Café Peko.
 
-Para iniciar la api despues de su clonacion se usa el comando 
+## Inicio rápido
 
-npm i 
+Sigue estos pasos para poner en marcha la API en tu entorno local:
 
-este comando es para instalar las depencias 
+1. Clona este repositorio en tu máquina local.
 
-ejecuta en la terminal que utlice el siguiente comando 
+2. Abre una terminal y navega hasta el directorio del repositorio clonado.
 
-npm run start:dev
+3. Ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-Este comando sirve para poder correr la API, se ejecuta por predeterminado en el puerto 3000
+   ```bash
+   npm install
+   ```
 
+4. Una vez finalizada la instalación, ejecuta el siguiente comando en la terminal para iniciar la API en modo de desarrollo:
 
+   ```bash
+   npm run start:dev
+   ```
 
-VILLO29
+   Esto lanzará la API en el puerto predeterminado 3000.
+
+## Colaboradores
+
+Queremos agradecer a los siguientes colaboradores por sus contribuciones a este repositorio:
+
+- [villo29](https://github.com/villo29)
+- [cristianrm13](https://github.com/cristianrm13)
+
+## Contacto
+
+Si tienes preguntas o necesitas ayuda, puedes ponerte en contacto con nuestro equipo en [correo electrónico de soporte].
+
+_El equipo de Café Peko_
